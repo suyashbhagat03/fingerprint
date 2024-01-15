@@ -1,6 +1,9 @@
 {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "name": "fingerprint",
   "version": "0.1.0",
+  "homepage": "https://sbhagat.github.io/fingerprintjs-poc",
   "private": true,
   "dependencies": {
     "@fingerprintjs/fingerprintjs-pro-react": "^2.6.2",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
